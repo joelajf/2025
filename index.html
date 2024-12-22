@@ -6,31 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dear Daarluh - Happy New Year</title>
     <style>
-        body {
+        /* Full screen layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+        }
+
+        /* Solid pink background for the whole page */
+        body {
+            background-color: #fd6c9e ; /* Strong pink color */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            padding: 0;
+            color: #333;
             text-align: center;
         }
 
+        /* Content container with very light, soft pink background */
         .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            background-color: #F8C8DC; /* Very soft pastel pink */
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            padding: 40px;
             max-width: 800px;
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
         }
 
         h1 {
-            font-size: 2.5em;
-            color: #ff69b4;
+            font-size: 2.8em;
+            color: #e52b50 ; /* Deep pink for the header */
             margin-bottom: 20px;
         }
 
@@ -50,12 +58,33 @@
 
         .footer {
             margin-top: 20px;
-            font-size: 1em;
-            color: #777;
+            font-size: 1.1em;
+            color: #e40078;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .signature {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
 <body>
+
+    <!-- Main content container -->
     <div class="container">
         <h1>Dear Daarluh,</h1>
         <p>Happy New Year, my love. As we step into another year together, I want to take a moment to remind you just how grateful I am for you. You truly mean the world to me.</p>
@@ -69,5 +98,6 @@
             Wishing you a year full of love, happiness, and endless possibilities.
         </div>
     </div>
+
 </body>
 </html>
